@@ -13,4 +13,6 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="click_to_get_your_fortune">Click to get your Fortune</string>
+    <string name="enter_your_question">Enter your Question</string>
 </resources>
