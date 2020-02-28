@@ -18,7 +18,7 @@ public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+      public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
@@ -30,7 +30,9 @@ public class GalleryFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
         return root;
     }
+
 
 }
