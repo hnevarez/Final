@@ -8,6 +8,9 @@ public class Base extends MagicObj
     public Base()
     {
         setName("Magic Eight Ball");
+        fillGood();
+        fillBad();
+        fillNeutral();
     }
 
     public void fillGood()

@@ -23,7 +23,7 @@ public class MagicObj
         this.name = name;
     }
 
-    public void createRandom(int roll)
+    public String createRandom(int roll)
     {
         switch (roll)
         {
@@ -37,27 +37,25 @@ public class MagicObj
             case 8:
             case 9:
             case 10:{
-                System.out.println(good.get(roll-1));
-                break;
+                return good.get(roll-1);
+
             }
             case 11:
             case 12:
             case 13:
             case 14:
             case 15:{
-                System.out.println(neutral.get(roll-11));
-                break;
+               return neutral.get(roll-11);
             }
             case 16:
             case 17:
             case 18:
             case 19:
             case 20:{
-                System.out.println(bad.get(roll-16));
-                break;
+                return bad.get(roll-16);
             }
         }
-
+        return null;
     }
 
     public String toString()

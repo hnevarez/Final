@@ -2,6 +2,9 @@ package com.example.magicball;
 
 import android.os.Bundle;
 
+import com.example.magicball.model.Base;
+import com.example.magicball.model.Dice;
+import com.example.magicball.model.MagicObj;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -20,10 +23,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    Dice dice=new Dice();
+    MagicObj magicBall=new Base();
+    TextView magicAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        magicAnswer =findViewById(R.id.magicAnswer); //
     }
 
 
@@ -66,5 +76,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void magicSubmit(View view)
+    {
+        magicAnswer.setText(magicBall.createRandom(dice.roll20()));
     }
 }
