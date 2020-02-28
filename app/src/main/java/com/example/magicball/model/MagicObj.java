@@ -45,7 +45,7 @@ public class MagicObj
             case 13:
             case 14:
             case 15:{
-                System.out.println(neutral.get(roll-1));
+                System.out.println(neutral.get(roll-11));
                 break;
             }
             case 16:
@@ -53,14 +53,9 @@ public class MagicObj
             case 18:
             case 19:
             case 20:{
-                System.out.println(bad.get(roll-1));
+                System.out.println(bad.get(roll-16));
                 break;
             }
-
-
-
-
-
         }
 
     }
