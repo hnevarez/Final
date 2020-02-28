@@ -11,18 +11,6 @@ public class Base extends MagicObj
     }
 
 
-    /*
-     It is certain.
-● It is decidedly so.
-● Without a doubt.
-● Yes - definitely.
-● You may rely on it.
-● As I see it, yes.
-● Most likely.
-● Outlook good.
-● Yes.
-● Signs point to yes.
-     */
 
     public void fillGood()
     {
@@ -37,6 +25,19 @@ public class Base extends MagicObj
         good.add("Yes");
         good.add("Signs point to yes");
     }
+       /*
+     It is certain.
+● It is decidedly so.
+● Without a doubt.
+● Yes - definitely.
+● You may rely on it.
+● As I see it, yes.
+● Most likely.
+● Outlook good.
+● Yes.
+● Signs point to yes.
+     */
+
 
     public void fillNeutral()
     {
