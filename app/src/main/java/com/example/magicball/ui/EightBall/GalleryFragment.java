@@ -1,4 +1,4 @@
-package com.example.magicball.ui.gallery;
+package com.example.magicball.ui.EightBall;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -32,4 +32,5 @@ public class GalleryFragment extends Fragment {
         });
         return root;
     }
+
 }

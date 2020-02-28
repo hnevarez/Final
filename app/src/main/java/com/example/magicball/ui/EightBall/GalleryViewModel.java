@@ -1,4 +1,4 @@
-package com.example.magicball.ui.gallery;
+package com.example.magicball.ui.EightBall;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
