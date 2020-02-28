@@ -10,8 +10,6 @@ public class Base extends MagicObj
         setName("Magic Eight Ball");
     }
 
-
-
     public void fillGood()
     {
         good.add("It is certain.");
@@ -25,36 +23,23 @@ public class Base extends MagicObj
         good.add("Yes");
         good.add("Signs point to yes");
     }
-       /*
-     It is certain.
-● It is decidedly so.
-● Without a doubt.
-● Yes - definitely.
-● You may rely on it.
-● As I see it, yes.
-● Most likely.
-● Outlook good.
-● Yes.
-● Signs point to yes.
-     */
-
 
     public void fillNeutral()
     {
-        neutral.add("It is certain.");
-        neutral.add("It is decidedly so.");
-        neutral.add("Without a doubt");
-        neutral.add("Yes, definitely");
-        neutral.add("You may rely on it");
+        neutral.add("Reply hazy, try again.");
+        neutral.add("Ask again later.");
+        neutral.add("Better not tell you now.");
+        neutral.add("Cannot predict now.");
+        neutral.add("Concentrate and ask again.");
     }
 
     public void fillBad()
     {
-        bad.add("It is certain.");
-        bad.add("It is decidedly so.");
-        bad.add("Without a doubt");
-        bad.add("Yes, definitely");
-        bad.add("You may rely on it");
+        bad.add("Don't count on it.");
+        bad.add("My reply is no.");
+        bad.add("My sources say no.");
+        bad.add("Outlook not so good.");
+        bad.add("Very doubtful.");
     }
 
 
