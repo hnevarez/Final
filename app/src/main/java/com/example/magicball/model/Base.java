@@ -53,16 +53,3 @@ public class Base extends MagicObj
         return  super.toString();
     }
 }
-
-
-/*
-Use for custom
-   public void Fill(ArrayList pick, int size,String input)
-    {
-        for(int i=0; i<size-1;i++)
-        {
-            pick.add(input);
-        }
-
-    }
- */
