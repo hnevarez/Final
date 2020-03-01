@@ -9,7 +9,6 @@ public class MagicObj
     protected ArrayList<String> neutral= new ArrayList<>(); //holds 5
     protected ArrayList<String>  bad= new ArrayList<>(); //holds 5
 
-
     public void MagicObj(String name)
     {
         setName(name);
