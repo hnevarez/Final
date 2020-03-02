@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
     <TextView
         android:id="@+id/text_gallery"
@@ -22,36 +23,69 @@
         android:id="@+id/btnRoll"
         android:layout_width="209dp"
         android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
         android:onClick="magicSubmit"
+        android:shadowColor="#673AB7"
+        android:shadowRadius="50"
         android:text="@string/click_to_get_your_fortune"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <EditText
         android:id="@+id/etEnterQuestion"
-        android:layout_width="299dp"
-        android:layout_height="50dp"
+        android:layout_width="315dp"
+        android:layout_height="59dp"
         android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:hint="@string/enter_your_question"
+        android:fontFamily="@font/berkshire_swash"
+        android:foregroundTint="#FFFFFF"
+        android:hint="@string/enter_question"
         android:inputType="textPersonName"
+        android:textColor="#F8F5F5"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="368dp"
+        android:layout_height="471dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/magicballredone" />
 
     <TextView
         android:id="@+id/magicAnswer"
-        android:layout_width="242dp"
-        android:layout_height="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/etEnterQuestion"
+        android:layout_width="201dp"
+        android:layout_height="134dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#030204"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_gallery" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
