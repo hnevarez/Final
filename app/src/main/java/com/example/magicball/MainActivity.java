@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
     Dice dice=new Dice();
-    MagicObj magicBall=new Base();
+    MagicObj magicEightBall=new Base();
     MagicObj custom=new Custom();
     TextView magicAnswer;
     int count=0;
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void magicSubmit(View view)
     {
-        magicAnswer.setText(magicBall.createRandom(dice.roll20()));//broke
+        magicAnswer.setText(magicEightBall.createRandom(dice.roll20()));//broke
     }
 
     public void customSubmit(View view)
@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         magicAnswer.setText(custom.createRandom(dice.roll20()));//broke
     }
 
+    //custom
+    /*
     public void customSet(View view)
     {
        if(count>=10)
@@ -113,5 +115,6 @@ public class MainActivity extends AppCompatActivity {
            //disable button
        }
     }
+     */
 
 }

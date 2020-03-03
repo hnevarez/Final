@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Custom extends MagicObj
 {
+    public Custom()
+    {
+
+    }
 
    public void fill(ArrayList pick, int size, String input)
     {

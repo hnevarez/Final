@@ -13,7 +13,7 @@ public class Base extends MagicObj
         fillNeutral();
     }
 
-    public void fillGood()
+    private void fillGood()
     {
         good.add("It is certain.");
         good.add("It is decidedly so.");
@@ -27,7 +27,7 @@ public class Base extends MagicObj
         good.add("Signs point to yes");
     }
 
-    public void fillNeutral()
+    private void fillNeutral()
     {
         neutral.add("Reply hazy, try again.");
         neutral.add("Ask again later.");
@@ -36,7 +36,7 @@ public class Base extends MagicObj
         neutral.add("Concentrate and ask again.");
     }
 
-    public void fillBad()
+    private void fillBad()
     {
         bad.add("Don't count on it.");
         bad.add("My reply is no.");
