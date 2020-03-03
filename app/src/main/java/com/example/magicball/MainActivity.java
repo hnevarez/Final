@@ -3,6 +3,7 @@ package com.example.magicball;
 import android.os.Bundle;
 
 import com.example.magicball.model.Base;
+import com.example.magicball.model.Custom;
 import com.example.magicball.model.Dice;
 import com.example.magicball.model.MagicObj;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -30,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
     Dice dice=new Dice();
-    MagicObj magicBall=new Base();
+    MagicObj magicEightBall=new Base();
+    MagicObj custom=new Custom();
     TextView magicAnswer;
+    int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +83,38 @@ public class MainActivity extends AppCompatActivity {
 
     public void magicSubmit(View view)
     {
-        magicAnswer.setText(magicBall.createRandom(dice.roll20()));
+        magicAnswer.setText(magicEightBall.createRandom(dice.roll20()));//broke
     }
+
+    public void customSubmit(View view)
+    {
+        magicAnswer.setText(custom.createRandom(dice.roll20()));//broke
+    }
+
+    //custom
+    /*
+    public void customSet(View view)
+    {
+       if(count>=10)
+       {
+           custom.fill(custom.getGoodArrayList(),10,getText);
+           count++;
+       }
+        else if(count<=15)
+        {
+            custom.fill(custom.getGoodArrayList(),5,getText);
+            count++;
+        }
+        else  if(count<=20)
+        {
+            custom.fill(custom.getGoodArrayList(),5,getText);
+            count++;
+        }
+        else
+       {
+           //disable button
+       }
+    }
+     */
+
 }
